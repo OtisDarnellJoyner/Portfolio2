@@ -1,0 +1,22 @@
+{
+  "name": "testing-grounds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "pug": "^2.0.0-beta.12"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "jade-bootstrap": "^1.0.12",
+    "pug": "^2.0.0-beta.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
