@@ -4,11 +4,11 @@ var sass = require('gulp-sass');
 var bs = require('browser-sync');
 
 gulp.task('pug', function(){
-    return gulp.src('./src/index.pug')
+    return gulp.src('./*.pug')
     .pipe(pug({
         pretty: true
     }))
-    .pipe(gulp.dest('./src'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('pug-watch',['pug'] , function(done){
@@ -17,9 +17,9 @@ gulp.task('pug-watch',['pug'] , function(done){
 });
 
 gulp.task('sass', function(){
-	return gulp.src('./src/./sass/*.sass')
+	return gulp.src('./sass/*.sass')
 	.pipe(sass().on('error', sass.logError))
-	.pipe(gulp.dest('./src/css'))
+	.pipe(gulp.dest('./css'))
 });
 
 gulp.task('sass-watch',['sass'], function(done){
@@ -32,11 +32,11 @@ gulp.task('sass-watch',['sass'], function(done){
 gulp.task('default', ['pug-watch', 'sass-watch'], function(){
 	bs.init({
 		server: {
-			baseDir: "./src",
+			baseDir: "./",
 			index: "index.html"
 		}
 	});
 
-	gulp.watch('./src/*.pug', ['pug-watch']);
-	gulp.watch('./src/sass/*.sass', ['sass-watch']);
+	gulp.watch('./*.pug', ['pug-watch']);
+	gulp.watch('./sass/*.sass', ['sass-watch']);
 });
