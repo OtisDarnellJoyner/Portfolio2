@@ -8,18 +8,16 @@ a
   &:focus, &:hover
     color: #fff
 
-/* Custom default button
+/* Custom default button */
 
 .btn-default
   color: #333
-  text-shadow: none
-  /* Prevent inheritance from `body`
+  text-shadow: none // Prevent inheritance from `body` 
   background-color: #fff
   border: 1px solid #fff
   &:hover, &:focus
     color: #333
-    text-shadow: none
-    /* Prevent inheritance from `body`
+    text-shadow: none // Prevent inheritance from `body`
     background-color: #fff
     border: 1px solid #fff
 
@@ -42,8 +40,7 @@ body
 .site-wrapper
   display: table
   width: 100%
-  height: 100%
-  /* For at least Firefox
+  height: 100% // For at least Firefox
   min-height: 100%
   -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5)
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5)
@@ -78,8 +75,7 @@ body
       padding-left: 0
       font-size: 16px
       font-weight: bold
-      color: #fff
-      /* IE8 proofing
+      color: #fff //* IE8 proofing
       color: rgba(255, 255, 255, 0.75)
       border-bottom: 2px solid transparent
       &:hover, &:focus
@@ -112,29 +108,44 @@ body
  * Footer
 
 .mastfoot
-  color: #999
-  /* IE8 proofing
+  color: #999 //* IE8 proofing
   color: rgba(255, 255, 255, 0.5)
 
 /*
  * Affix and center
 
-@media (min-width: 768px)
-  /* Pull out the header and footer
+
+
+@media (min-width: 768px) //* Pull out the header and footer
   .masthead
     position: fixed
     top: 0
   .mastfoot
     position: fixed
-    bottom: 0
-  /* Start the vertical centering
+    bottom: 0 //* Start the vertical centering
   .site-wrapper-inner
-    vertical-align: middle
-  /* Handle the widths
+    vertical-align: middle //* Handle the widths
   .masthead, .mastfoot, .cover-container
-    width: 100%
-    /* Must be percentage or pixels for horizontal alignment
+    width: 100% //* Must be percentage or pixels for horizontal alignment
 
 @media (min-width: 992px)
   .masthead, .mastfoot, .cover-container
     width: 700px
+
+
+// Gallery page
+
+.album
+  .col-lg-4
+    margin-bottom: 1.5rem
+    text-align: center
+
+.album
+  h2
+    font-weight: normal
+
+.album
+  .col-lg-4
+    p 
+      margin-right: .75rem
+      margin-left: .75rem
