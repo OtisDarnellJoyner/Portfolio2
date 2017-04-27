@@ -6,7 +6,7 @@ block body
         div(class=['masthead', 'clearfix'])
           .inner
             h3.masthead-brand Brand
-            nav 
+            nav(class=['d-flex', 'justify-content-end'])
               ul(class=['nav','masthead-nav'])
                 li: a(href="index.html") Home
                 li: a(href="gallery.html") Gallery
@@ -18,33 +18,19 @@ block body
               h1.jumbotron-heading Album Example
               p(class=['lead', 'text-muted']) Something short and leading about the collection below—its contents, the creator, etc.
               
-          .pics(class=['text-muted'])
-            .container
-              .row(class=['d-flex', 'justify-content-center'])
-                .card
-                  img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
-                .card
-                  img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
-                .card
-                  img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
-                .card
-                  img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
-                .card
-                  img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
-                .card
-                  img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
-                .card
-                  img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
-                .card
-                  img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
           
-          
-          
-  
+          .container
+            .row(class=['d-flex', 'justify-content-around'])
+              .card
+                img(class=[ 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
+              .card
+                img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
+              .card
+                img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
+              .card
+                img(class=['card-img-top', 'img-fluid'] src="./img/cover-background.jpg" alt="Card image cap" width="140" height="140")
               
                   
-                  
-              
         .mastfoot
           .inner
             p Footer 
