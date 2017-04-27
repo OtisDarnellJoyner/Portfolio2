@@ -1,4 +1,5 @@
 extends html-boiler
+include abstract-gallery-mixin
 block body
   .site-wrapper
     .site-wrapper-inner
@@ -19,30 +20,14 @@ block body
               p(class=['lead', 'text-muted']) Something short and leading about the collection below—its contents, the creator, etc.      
           .container
             .row
-              .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
-                a.thumbnail(href="./img/placeholder.png", target="_blank")
-                  img.img-responsive(src="./img/placeholder.png" width="140" height="140")
-              .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
-                a.thumbnail(href="./img/placeholder.png", target="_blank")
-                  img.img-responsive(src="./img/placeholder.png" width="140" height="140")
-              .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
-                a.thumbnail(href="./img/placeholder.png", target="_blank")
-                  img.img-responsive(src="./img/placeholder.png" width="140" height="140")
-              .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
-                a.thumbnail(href="./img/placeholder.png", target="_blank")
-                  img.img-responsive(src="./img/placeholder.png" width="140" height="140")
-              .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
-                a.thumbnail(href="./img/placeholder.png", target="_blank")
-                  img.img-responsive(src="./img/placeholder.png" width="140" height="140")
-              .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
-                a.thumbnail(href="./img/placeholder.png", target="_blank")
-                  img.img-responsive(src="./img/placeholder.png" width="140" height="140")
-              .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
-                a.thumbnail(href="./img/placeholder.png", target="_blank")
-                  img.img-responsive(src="./img/placeholder.png" width="140" height="140")
-              .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
-                a.thumbnail(href="./img/placeholder.png", target="_blank")
-                  img.img-responsive(src="./img/placeholder.png" width="140" height="140")                  
+              +image()
+              +image()
+              +image()
+              +image()
+              +image()
+              +image()
+              +image()
+              +image()             
         .mastfoot
           .inner
             p Footer 
