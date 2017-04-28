@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var bs = require('browser-sync');
 
 gulp.task('pug', function(){
-    return gulp.src('./*.pug')
+    return gulp.src('./pug/*.pug')
     .pipe(pug({
         pretty: true
     }))
@@ -37,6 +37,6 @@ gulp.task('default', ['pug-watch', 'sass-watch'], function(){
 		}
 	});
 
-	gulp.watch('./*.pug', ['pug-watch']);
+	gulp.watch('./pug/*.pug', ['pug-watch']);
 	gulp.watch('./sass/*.sass', ['sass-watch']);
 });
