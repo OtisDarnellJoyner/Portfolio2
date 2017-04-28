@@ -1,4 +1,5 @@
 extends html-boiler
+include abstract-gallery-mixin
 block body
   .site-wrapper
     .site-wrapper-inner
@@ -15,12 +16,12 @@ block body
         .inner-cover
           section(class=['jumbotron', 'text-center'])
             .container
-              h1.jumbotron-heading Abstract Album
+              h1.jumbotron-heading Digital Album
               p(class=['lead', 'text-muted']) Something short and leading about the collection below—its contents, the creator, etc.      
           .container
             .row
-             - for(var i = 0; i < 8; i++)
-              +image(placeholder, placeholder)                
+              - for(var i = 0; i < 8; i++)
+                +image(placeholder, placeholder)          
         .mastfoot
           .inner
             p Footer 
