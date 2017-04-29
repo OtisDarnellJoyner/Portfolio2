@@ -8,7 +8,7 @@ gulp.task('pug', function(){
     .pipe(pug({
         pretty: true
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./views'));
 });
 
 gulp.task('pug-watch',['pug'] , function(done){
@@ -32,11 +32,12 @@ gulp.task('sass-watch',['sass'], function(done){
 gulp.task('default', ['pug-watch', 'sass-watch'], function(){
 	bs.init({
 		server: {
-			baseDir: "./",
+			baseDir: "./views",
 			index: "index.html"
 		}
 	});
 
 	gulp.watch('./pug/*.pug', ['pug-watch']);
+	gulp.watch('./pug/templates/*.pug', ['pug-watch']);
 	gulp.watch('./sass/*.sass', ['sass-watch']);
 });
