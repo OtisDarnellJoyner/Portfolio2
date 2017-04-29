@@ -19,7 +19,7 @@ gulp.task('pug-watch',['pug'] , function(done){
 gulp.task('sass', function(){
 	return gulp.src('./sass/*.sass')
 	.pipe(sass().on('error', sass.logError))
-	.pipe(gulp.dest('./css'))
+	.pipe(gulp.dest('./www/css'))
 });
 
 gulp.task('sass-watch',['sass'], function(done){
