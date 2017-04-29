@@ -8,7 +8,7 @@ gulp.task('pug', function(){
     .pipe(pug({
         pretty: true
     }))
-    .pipe(gulp.dest('./views'));
+    .pipe(gulp.dest('./www'));
 });
 
 gulp.task('pug-watch',['pug'] , function(done){
@@ -32,7 +32,7 @@ gulp.task('sass-watch',['sass'], function(done){
 gulp.task('default', ['pug-watch', 'sass-watch'], function(){
 	bs.init({
 		server: {
-			baseDir: "./views",
+			baseDir: "./www",
 			index: "index.html"
 		}
 	});
