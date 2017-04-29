@@ -2,3 +2,28 @@ mixin image(thumbnail, image)
   .col-lg-3(class=['col-md-3', 'col-sm-3', 'thumb'])
     a.thumbnail(href=thumbnail, target="_blank")
       img.img-responsive(src=image width="140" height="140")
+
+
+mixin nav
+  div(class=['masthead', 'clearfix'])
+    .inner
+      h3.masthead-brand(class=['aligin-self-center']) Brand
+      nav(class=['d-flex', 'justify-content-center'])
+        ul(class=['nav','masthead-nav'])
+          li: a(href="index.html") Home
+          li: a(href="gallery.html") Gallery
+          li: a(href="#") About
+          li: a(href="#") Contact
+
+
+mixin coverPageContent
+  h1.cover-heading Cover your Page
+    p.lead Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+  .container
+    .row(class=['d-flex', 'justify-content-center'])
+      .col-sm-6
+        .card
+          img(class=['card-img-top', 'img-fluid'] src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsSKLt4iKH3QPxeZFYmxwOVKZl84p0t1EQVvBMR5OlRbJioE_f" alt="Card Image")
+
+mixin footer
+  p Footer
