@@ -1,8 +1,26 @@
 extends html-boiler
-block nav
-  +nav
-block coverContent
-  h1.cover-heading Cover your Page
-  p.lead Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
-    +coverPageContent
-             
+block body
+  .site-wrapper
+    .site-wrapper-inner
+      .cover-container
+        div(class=['masthead', 'clearfix'])
+          .inner
+            h3.masthead-brand(class=['aligin-self-center']) Brand
+              nav(class=['d-flex', 'justify-content-center'])
+                ul(class=['nav','masthead-nav'])
+                  li: a(href="index.html") Home
+                  li: a(href="gallery.html") Gallery
+                  li: a(href="#") About
+                  li: a(href="#") Contact
+            .inner-cover
+              h1.cover-heading Cover your Page
+              p.lead Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+              .container
+                .row(class=['d-flex', 'justify-content-center'])
+                  .col-sm-6
+                    .card
+                      img(class=['card-img-top', 'img-fluid'] src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsSKLt4iKH3QPxeZFYmxwOVKZl84p0t1EQVvBMR5OlRbJioE_f" alt="Card Image")
+        .mastfoot
+          .inner
+            +footer
+            

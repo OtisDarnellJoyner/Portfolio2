@@ -12,19 +12,8 @@ html(lang="en")
 			link(rel="stylesheet", href="./css/gallery.css")
 			link(rel="stylesheet", href="./css/abstract.css")
 	body
-	.site-wrapper
-		.site-wrapper-inner
-			.cover-container
-				div(class=['masthead', 'clearfix'])
-					.inner
-						block nav
-
-						.inner-cover
-							block coverContent
-				.mastfoot
-					.inner
-						+footer
-		
+		block body
+	
 		block scripts
 			script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous")
 			script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")
