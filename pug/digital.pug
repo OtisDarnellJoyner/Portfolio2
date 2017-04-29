@@ -6,21 +6,21 @@ block body
         div(class=['masthead', 'clearfix'])
           .inner
             h3.masthead-brand(class=['aligin-self-center']) Brand
-              nav(class=['d-flex', 'justify-content-center'])
-                ul(class=['nav','masthead-nav'])
-                  li: a(href="index.html") Home
-                  li: a(href="gallery.html") Gallery
-                  li: a(href="#") About
-                  li: a(href="#") Contact
-            .inner-cover
-              section(class=['jumbotron', 'text-center'])
-                .container
-                  h1.jumbotron-heading Digital Album
-                  p(class=['lead', 'text-muted']) Something short and leading about the collection below—its contents, the creator, etc.      
-              .container
-                .row
-                  - for(var i = 0; i < 8; i++)
-                    +image(placeholder, placeholder)
+            nav(class=['d-flex', 'justify-content-center'])
+              ul(class=['nav','masthead-nav'])
+                li: a(href="index.html") Home
+                li: a(href="gallery.html") Gallery
+                li: a(href="#") About
+                li: a(href="#") Contact
+        .inner-cover
+          section(class=['jumbotron', 'text-center'])
+            .container
+              h1.jumbotron-heading Digital Album
+              p(class=['lead', 'text-muted']) Something short and leading about the collection below—its contents, the creator, etc.      
+          .container
+            .row
+              - for(var i = 0; i < 8; i++)
+                +image(placeholder, placeholder)
         .mastfoot
           .inner
             +footer
