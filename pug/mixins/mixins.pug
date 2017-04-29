@@ -5,15 +5,13 @@ mixin image(thumbnail, image)
 
 
 mixin nav
-  div(class=['masthead', 'clearfix'])
-    .inner
-      h3.masthead-brand(class=['aligin-self-center']) Brand
-      nav(class=['d-flex', 'justify-content-center'])
-        ul(class=['nav','masthead-nav'])
-          li: a(href="index.html") Home
-          li: a(href="gallery.html") Gallery
-          li: a(href="#") About
-          li: a(href="#") Contact
+  h3.masthead-brand(class=['aligin-self-center']) Brand
+  nav(class=['d-flex', 'justify-content-center'])
+    ul(class=['nav','masthead-nav'])
+      li: a(href="index.html") Home
+      li: a(href="gallery.html") Gallery
+      li: a(href="#") About
+      li: a(href="#") Contact
 
 
 mixin coverPageContent
