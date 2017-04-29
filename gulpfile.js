@@ -8,7 +8,7 @@ gulp.task('pug', function(){
     .pipe(pug({
         pretty: true
     }))
-    .pipe(gulp.dest('./www'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('pug-watch',['pug'] , function(done){
@@ -19,7 +19,7 @@ gulp.task('pug-watch',['pug'] , function(done){
 gulp.task('sass', function(){
 	return gulp.src('./sass/*.sass')
 	.pipe(sass().on('error', sass.logError))
-	.pipe(gulp.dest('./www/css'))
+	.pipe(gulp.dest('./css'))
 });
 
 gulp.task('sass-watch',['sass'], function(done){
@@ -32,12 +32,11 @@ gulp.task('sass-watch',['sass'], function(done){
 gulp.task('default', ['pug-watch', 'sass-watch'], function(){
 	bs.init({
 		server: {
-			baseDir: "./www",
+			baseDir: "./",
 			index: "index.html"
 		}
 	});
 
 	gulp.watch('./pug/*.pug', ['pug-watch']);
-	gulp.watch('./pug/templates/*.pug', ['pug-watch']);
 	gulp.watch('./sass/*.sass', ['sass-watch']);
 });
